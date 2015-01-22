@@ -1,0 +1,16 @@
+[user]
+	email = jonidev@gmail.com
+	name = Yoan Arnaudov
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+[core]
+	autocrlf = input
+	editor = vim
+[push]
+	default = simple
