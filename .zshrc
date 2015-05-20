@@ -180,6 +180,8 @@ alias tmux="TERM=screen-256color-bce tmux"
 #git aliases
 alias gst='git status'
 
+alias t='todo'
+
 # added by travis gem
 [ -f /home/nacholibre/.travis/travis.sh ] && source /home/nacholibre/.travis/travis.sh
 
