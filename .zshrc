@@ -187,6 +187,7 @@ alias t='todo'
 
 # add ruby gems bin to $PATH
 PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
+PATH="/usr/share/webapps/:$PATH"
 
 export NVM_DIR="/home/nacholibre/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
