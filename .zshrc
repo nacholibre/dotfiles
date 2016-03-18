@@ -58,7 +58,7 @@ HISTFILE=~/.history
 
 # User configuration
 
-export PATH="/home/nacholibre/.gem/ruby/2.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/home/nacholibre/.gem/ruby/2.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/nacholibre/.composer/vendor/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -187,6 +187,8 @@ alias t='todo'
 
 # add ruby gems bin to $PATH
 PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
+PATH="/usr/share/webapps/:$PATH"
 
-export NVM_DIR="/home/nacholibre/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="/home/nacholibre/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+. ~/.nvm/nvm.sh
