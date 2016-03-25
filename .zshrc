@@ -58,7 +58,7 @@ HISTFILE=~/.history
 
 # User configuration
 
-export PATH="/home/nacholibre/.gem/ruby/2.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/nacholibre/.composer/vendor/bin/"
+#export PATH="/home/nacholibre/.gem/ruby/2.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/nacholibre/.composer/vendor/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -145,28 +145,30 @@ if [ $UID -ne 0 ]; then
 fi
 
 ## ls ## {{{
-alias ls='ls -hF --color=auto'
-alias lr='ls -R'                    # recursive ls
+#alias ls='ls'
+#alias lr='ls -R'                    # recursive ls
 alias ll='ls -al'
-alias la='ll -A'
-alias lx='ll -BX'                   # sort by extension
-alias lz='ll -rS'                   # sort by size
-alias lt='ll -rt'                   # sort by date
-alias lm='la | more'
-# }}}
+#alias la='ll -A'
+#alias lx='ll -BX'                   # sort by extension
+#alias lz='ll -rS'                   # sort by size
+#alias lt='ll -rt'                   # sort by date
+#alias lm='la | more'
+## }}}
 
 ## Safety features ## {{{
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -I'                    # 'rm -i' prompts for every file
+#alias rm='rm -I'                    # 'rm -i' prompts for every file
 # safer alternative w/ timeout, not stored in history
-alias rm=' timeout 3 rm -Iv --one-file-system'
+#alias rm=' timeout 3 rm -Iv --one-file-system'
 alias ln='ln -i'
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 alias cls=' echo -ne "\033c"'       # clear screen for real (it does not work in Terminology)
 # }}}
+
+#alias vim='/usr/local/Cellar/vim/7.4.1589/bin/vim'
 
 ## Make Bash error tolerant ## {{{
 alias :q=' exit'
@@ -175,7 +177,9 @@ alias :x=' exit'
 alias cd..='cd ..'
 # }}}
 
-alias tmux="TERM=screen-256color-bce tmux"
+#alias tmux="TERM=screen-256color-bce tmux"
+#.sessions
+alias vim='/usr/local/bin/vim'
 
 #git aliases
 alias gst='git status'
@@ -186,9 +190,9 @@ alias t='todo'
 [ -f /home/nacholibre/.travis/travis.sh ] && source /home/nacholibre/.travis/travis.sh
 
 # add ruby gems bin to $PATH
-PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
-PATH="/usr/share/webapps/:$PATH"
+#PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
+#PATH="/usr/share/webapps/:$PATH"
 
 #export NVM_DIR="/home/nacholibre/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-. ~/.nvm/nvm.sh
+#. ~/.nvm/nvm.sh
