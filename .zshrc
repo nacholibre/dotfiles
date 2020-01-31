@@ -22,7 +22,7 @@ alias ll='ls -al'
 
 #alias tmux="TERM=screen-256color-bce tmux"
 #.sessions
-alias vim='/usr/local/bin/vim'
+#alias vim='/usr/local/bin/vim'
 
 export TERM=xterm-256color
 
