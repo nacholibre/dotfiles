@@ -1,0 +1,19 @@
+[font]
+size = 13.5
+normal = { family = "monaco", style = "Regular" } # Default font face and style
+# https://petar.dev/notes/crisp-fonts-alacritty/ - For crisp font
+
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/enfocado_light.toml"
+    #"~/.config/alacritty/themes/themes/night_owlish_light.toml"
+]
+
+
+[window]
+padding = { x = 3, y = 3 }
+decorations = "Buttonless"
+
+[selection]
+save_to_clipboard = true
