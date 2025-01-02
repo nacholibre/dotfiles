@@ -2,7 +2,7 @@
 	email = jonidev@gmail.com
 	name = Yoan Arnaudov
 [diff]
-	tool = vimdiff
+	tool = nvimdiff
 [difftool]
 	prompt = false
 [alias]
@@ -11,7 +11,9 @@
 	lg = log --oneline --decorate --all --graph
 [core]
 	autocrlf = input
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitignore_global
 [push]
-	default = simple
+    autoSetupRemote = true
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
